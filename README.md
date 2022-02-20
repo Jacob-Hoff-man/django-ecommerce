@@ -37,7 +37,7 @@ The project focused on developing a full-stack web application using React/Djang
 seperate directories to keep the codebase as organized as possible. A REST API was developed in the backend to serve data to/from the frontend and database. The product data entry is handled via the django admin dashboard, but the backend does accomodate for dynamically inserting products. Additionally, the backend was designed to provide a list of all products, or a specific product, to the frontend for presenting to an end-user via the main website page (all products list) and the product page (a specific product). The cart process was handled mainly on the frontend, but maintains persistent data through the end-user's web browser local storage. The cart can be appended to from any product page (assuming the product has available stock), and a cart page was implemented to display the current state of the cart. To handle the checkout process, users/authentication were implemented into the project. This added additional tasks to the project, such as expanding the backend to accomodate for login/logout/registration, and the implementation of a user profile page. The checkout process consisted of a series of pages (shipping information, payment information, and checkout review/submission) and ultimately required the implementation of the order (checkout information) being sent to the database. This process requires authentication of a logged in user. Furthermore, the project allowed for the orders of a specific user to be sent to the frontend to be displayed, which is presented on a user's profile page when logged in. The virtual event booth, similar to the products, has it's data entry handled via the django admin dashboard, but the backend accomodates for dynamically inserting new events. The events page displays a specific event, and within the page is a form for submitting a simple raffle ticket (collects some general user information) to the database from the frontend. Finally, the backend serves the list of raffle tickets that
 pertain to a specific event, and these are listed on that event's page.
 
-##### Frontend:
+#### Frontend:
 The frontend utilizes various packages for it's design:
 - `npx create-react-app` - command used to generate boiler plate code for the frontend React application. 
 - react-bootstrap - component-based library that provides Bootstrap components in the form of React components. This is used extensively in the UI design due to the ease-of-use of the component library and styling options. Additionally, a bootstrap theme was selected from www.bootswatch.com.
@@ -53,10 +53,10 @@ The frontend utilizes various packages for it's design:
 The frontend react files were turned into static assets, and then merged into the django server, for optimization and security purposes.
 
 
-##### Backend:
+#### Backend:
 The backend utilizes various packages for it's design: 
 - django - used as the web framework for the backend.
-- `django-admin startproject` - command used to generate boiler plate code for the backend Django application. Subsequently, `python manage.py startapp ecommerce` was run to create the main app for the web application's backend.
+- `django-admin startproject` - command used to generate boiler plate code for the backend django application. Subsequently, `python manage.py startapp ecommerce` was run to create the main app for the web application's backend.
 - djangorestframework - used to build the REST API in the backend in a more simplified, flexible manner. 
 - django-cors-headers - adds cross-origin resource sharing headers to responses, which basically allows addresses to access the API based on the header.
 - Pillow - used for handling images in the backend database/models.
@@ -69,8 +69,9 @@ A list of the backend development code that was NOT generated boiler plate code:
 - All files in `ROOT/django-ecommerce/ecommerce/urls`.
 - All files in `ROOT/django-ecommerce/ecommerce/views`.
 - The `ROOT/django-ecommerce/ecommerce/serializers.py` file.
+- The `ROOT/django-ecommerce/ecommerce/models.py` file.
 - The `ROOT/django-ecommerce/ecommerce/signals.py` file.
-- 
+
 
 ### Trade-offs and Future Development
 
