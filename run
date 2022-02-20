@@ -1,7 +1,7 @@
 #!/bin/bash
 
-Source /env/bin/active
+source env/bin/activate
 
-cd backend
+cd django-ecommerce
 
 python manage.py runserver 
