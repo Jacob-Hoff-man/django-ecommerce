@@ -11,7 +11,7 @@ A simple ecommerce website that utilizes React/Django.
  
     - `cd django-ecommerce`
     
-- From inside of the nested `django-ecommerce` directory (and with the virtual environment active in the terminal/command prompts), install the required dependencies:
+- From inside of the nested `django-ecommerce` directory (and with the virtual environment active in the terminal/command prompt), install the required dependencies:
 
     - `pip install -r requirements.txt`
     
