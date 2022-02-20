@@ -15,7 +15,7 @@ A simple ecommerce website that utilizes React/Django.
 
     - `pip install -r requirements.txt`
     
-- After installing the required dependencies, run the following command (with the virtual environment active) to launch the server:
+- After installing the required dependencies, run the following command (with the virtual environment active) inside of the nested `django-ecommerce` directory to launch the server:
 
     - `python manage.py runserver`
     
