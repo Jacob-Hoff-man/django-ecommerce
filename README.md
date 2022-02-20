@@ -50,7 +50,7 @@ The frontend utilizes various packages for it's design:
 - redux-thunk - this is middleware for redux that allows action creators to return a function instead of a direct action.
 - redux-devtools-extensions - allows utilization of the redux devtools in google chrome for inspecting the redux global state (debugging purposes).
 
-The frontend react files were turned into static assets, and then merged into the django server, for optimization and security purposes.
+The frontend react files were turned into static assets, and then merged into the django server for optimization and security purposes.
 
 
 #### Backend:
@@ -79,10 +79,10 @@ A list of the backend development code that was NOT generated boiler plate code:
 such as rating and number of reviews, and there is an unused model schema in the backend for Reviews. The project does not have the ability for users to submit reviews at this time.
 This functionality was excluded in the interest of time.
 
-- Payment processing still needs to be implemented, but there is a page view designed in the frontend flow for this feature. The functionality was detailed as not required for this code challenge,so in the interest of time, it was skipped. 
+- Payment processing still needs to be implemented, but there is a page view designed in the frontend flow for this feature. The functionality was detailed as not required for this code challenge, so in the interest of time, it was skipped. 
 
 - A customer admin view that allows for the input of products/events from the frontend was never implemented, but would be an essential requirement for future expansion of this project. Currently, the django admin dashboard is the only method for product/events entry, and considering the effictiveness of this in the scope of the project, developing the admin view was postponed for future development.
 
-- SQLite was used as a database due to it's inherent simplicity, as well as being pre-packaged with the boiler plate django server that was generated. A production-level project would rather use a database, such as PostgreSQL, instead of SQLite because it has issues with concurrency and scalability. Moving forward, the current database should be swapped for one that is more suited to production.
+- SQLite was used as a database due to it's inherent simplicity, as well as being pre-packaged with the boiler plate django server that was generated. A production-level project would rather use a database, such as PostgreSQL, that avoids SQLite's issues with concurrency and scalability. Moving forward, the current database should be swapped for one that is more suited to production.
 
 - The list of events in the nav dropdown (referencing the header menu) are statically encoded into the nav dropdown. It would be preferred to have a dynamically growing nav dropdown list to display all active events in the database, but there were issues during development with making this work, and should be revisited in the future.  
