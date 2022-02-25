@@ -86,3 +86,11 @@ This functionality was excluded in the interest of time.
 - SQLite was used as a database due to it's inherent simplicity, as well as being pre-packaged with the boiler plate django server that was generated. A production-level project would rather use a database, such as PostgreSQL, that avoids SQLite's issues with concurrency and scalability. Moving forward, the current database should be swapped for one that is better suited for production.
 
 - The list of events in the nav dropdown in the header menu are statically encoded into the nav dropdown. It would be preferred to have the nav dropdown list dynamically display all active events in the database, but there were issues during development with making this work, and the task should be revisited in the future.  
+
+
+### References
+
+- https://react-bootstrap.github.io/
+- https://docs.djangoproject.com/en/4.0/
+- https://react-redux.js.org/
+- https://www.udemy.com/course/django-with-react-an-ecommerce-website/
